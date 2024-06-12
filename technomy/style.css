@@ -1,0 +1,118 @@
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: teal;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+label, select {
+    margin: 20px;
+    font-size: 1.2em;
+}
+
+select {
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid teal;
+    border-radius: 5px;
+    background-color: #fff;
+    color: teal;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+select:hover {
+    border-color: coral;
+}
+select:focus {
+    outline: none;
+    border-color: coral;
+    box-shadow: 0 0 5px rgba(255, 127, 80, 0.5);
+}
+
+
+select {
+    appearance: none;
+
+}
+
+select:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+#contentArea {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 90%;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+#contentArea h3 {
+    font-size: 1.2em;
+    color: teal;
+}
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.content-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    height: 400px;
+}
+
+.content-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.content-item img {
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+.content-item img:hover {
+    transform: scale(1.00);
+}
+
+.content-item h2 {
+    font-size: 1.5em;
+    color: teal;
+    margin-bottom: 15px;
+}
+
+.content-item p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+}
